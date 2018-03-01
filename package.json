@@ -1,0 +1,30 @@
+{
+  "name": "lint-staged-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "foo1": "yarn foo2",
+    "foo2": "yarn foo3",
+    "foo3": "yarn foo4",
+    "foo4": "echo Foo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mthurlin/lint-staged-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mthurlin/lint-staged-issue/issues"
+  },
+  "homepage": "https://github.com/mthurlin/lint-staged-issue#readme",
+  "devDependencies": {
+    "lint-staged": "7.0.0"
+  },
+  "lint-staged": {
+    "linters": {
+      "*": "yarn foo1"
+    }
+  }
+}
